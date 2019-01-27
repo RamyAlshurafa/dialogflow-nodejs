@@ -8,7 +8,7 @@ const {Card, Suggestion} = require('dialogflow-fulfillment');
 process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
  
 module.exports = (request, response) => {
-  const agent = new WebhookClient({ request, response });
+  // const agent = new WebhookClient({ request, response });
   console.log('Dialogflow Request headers: ' + JSON.stringify(request.headers));
   console.log('Dialogflow Request body: ' + JSON.stringify(request.body));
  
