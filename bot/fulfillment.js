@@ -77,7 +77,7 @@ const assistant = dialogflow();
 
 
 assistant.intent('bookingCar', conv => {
-  console.log("+++++++++++++++++++ /////////////////// +++++++++++++++++++ ", conv);
+  console.log("+++++++++++++++++++ /////////////////// +++++++++++++++++++ ", JSON.stringify(conv));
 	// let name = conv.parameters.name;
 	conv.ask('Hello, welcome +++++++++++++++++++++++++++++++++');
 });
