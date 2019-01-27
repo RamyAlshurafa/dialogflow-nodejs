@@ -75,6 +75,8 @@ const assistant = dialogflow();
 // server.set('port', process.env.PORT || 5000);
 // server.use(bodyParser.json({type: 'application/json'}));
 
+console.log("+++++++++++++++++++ /////////////////// +++++++++++++++++++ ");
+
 assistant.intent('bookingCar', conv => {
 	// let name = conv.parameters.name;
 	conv.ask('Hello, welcome +++++++++++++++++++++++++++++++++');
