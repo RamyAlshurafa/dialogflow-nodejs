@@ -8,6 +8,6 @@ welcomeFulfillment = (agent) => {
 module.exports = (req, res) => {
   const agent = new WebhookClient({ request: req, response: res });
   let intentMap = new Map(); 
-  intentMap.set('Welcome', answerQuestion);
+  intentMap.set('Welcome', welcomeFulfillment);
   agent.handleRequest(intentMap);
 }
