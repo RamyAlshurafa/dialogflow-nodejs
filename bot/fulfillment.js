@@ -1,6 +1,8 @@
 const { WebhookClient } = require("dialogflow-fulfillment");
 
 welcomeFulfillment = (agent) => {
+  console.log(agent);
+  
   agent.add("this message sent by webhooks for Welcome intent")
   agent.add("this is another message also")
 }
