@@ -1,14 +1,14 @@
 const { WebhookClient } = require("dialogflow-fulfillment");
 
 welcomeFulfillment = (agent) => {
-  console.log(4444444444444,agent);
+  console.log(4444444444444,agent.session);
   
   agent.add("this message sent by webhooks for Welcome intent")
   agent.add("this is another message also")
 }
 
 historyBad = (agent) => {
-  console.log(22222222,agent);
+  console.log(22222222,agent.session);
 
   agent.add("this message sent by webhooks for History bad intent")
   agent.add("this is another message also")
